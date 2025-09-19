@@ -1,0 +1,18 @@
+.hero-section {
+  background-image: url("/public/assets/images/hero-bg.png");
+  height: 50%;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  background-image: url("/public/assets/images/fotter-placer.png");
+  height: 400px;
+  margin-top: 70px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
