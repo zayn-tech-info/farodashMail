@@ -9,10 +9,14 @@
   </head>
   <body class="w-max-5xl flex justify-center my-10">
     <section>
-      <section class="hero-section">
-        <header class="relative">
+      <section class="hero-section relative">
+        <header>
           <img src="public/images/logo-banner.png" alt="" />
-          <img class="absolute top-10 right-47" src="public/images/logo.png" alt="" />
+          <img
+            class="absolute top-10 right-47 absolute"
+            src="public/images/logo.png"
+            alt=""
+          />
         </header>
         <div class="justify-center flex flex-col items-center mt-16 mb-8">
           <p class="text-4xl font-bold text-red-600">
@@ -22,7 +26,9 @@
             Fresh groceries delivered fast
           </p>
         </div>
-        <img src="public/images/hero.png" alt="" />
+        <div class="page-frame">
+          <img class="absolute bottom-38" src="public/images/hero.png" alt="" />
+        </div>
       </section>
 
       <section class="bg-white px-6">
@@ -88,20 +94,7 @@
 
           <div
             class="relative z-20 flex items-center justify-center w-full h-full p-8"
-          >
-            <div>
-              <img
-                class="w-full h-auto object-contain"
-                src="public/images/items.png"
-                alt="Footer items"
-              />
-              <img
-                class="w-full h-auto object-contain"
-                src="public/images/items.png"
-                alt="Footer items"
-              />
-            </div>
-          </div>
+          ></div>
         </footer>
       </section>
     </section>
