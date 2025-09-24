@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FARODASH — Order Confirmation (Clone)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .zigzag {
+        background-image: url("/public/images/zigzag.png");
+        background-repeat: none;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-sans antialiased">
+    <div class="min-h-screen flex items-center justify-center p-6">
+      <div class="w-full max-w-[760px] bg-transparent">
+        <header class="bg-red-600 text-white rounded-t-xl overflow-hidden">
+          <div class="px-8 pt-8 pb-6 text-center">
+            <!-- Logo / small icon -->
+            <div class="flex items-center justify-center gap-3 mb-4">
+              <div class="mb-16">
+                <img width="300px" src="/public/images/logo.png" alt="" />
+              </div>
+              <span class="sr-only">Farodash</span>
+            </div>
+
+            <h1 class="text-3xl font-extrabold leading-tight">
+              Thank you for your order!
+            </h1>
+            <p class="mt-6 text-xl font-semibold max-w-2xl mx-auto">
+              Hello Victor Kayode,<br />Your order from
+              <span class="font-black">A.M Treats</span> has been received and
+              is now being prepared.
+            </p>
+          </div>
+
+          <div class="px-6 pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-xl p-6 shadow-sm">
+                <h3 class="text-xl font-bold text-gray-800">Summary</h3>
+                <div class="mt-4 text-gray-700 space-y-3">
+                  <div>
+                    <span class="block font-medium">Order No:</span
+                    ><span class="text-sm text-gray-500">#--</span>
+                  </div>
+                  <div>
+                    <span class="block font-medium">Date</span
+                    ><span class="text-sm text-gray-500">--</span>
+                  </div>
+                  <div>
+                    <span class="block font-medium">Total</span
+                    ><span class="text-sm text-gray-500">#8,025.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm">
+                <h3 class="text-xl font-bold text-gray-800">
+                  Delivery Address
+                </h3>
+                <div class="mt-4 text-gray-700">
+                  <p class="font-medium">
+                    6FV5CVMW+W6G,<br />1 Akobo Road,<br />Ibadan<br />200132,
+                    Oyo<br />Nigeria
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </header>
+
+        <!-- Main white card -->
+        <main class="bg-white shadow-lg -mt-2 p-8">
+          <h2 class="text-2xl font-bold text-center mb-6">
+            Your Order Confirmation
+          </h2>
+
+          <div class="grid grid-cols-1 gap-6">
+            <!-- Repeatable line item -->
+            <div class="flex gap-6 items-start">
+              <div class="w-20 h-20 bg-pink-200 rounded-lg flex-shrink-0"></div>
+              <div class="flex-1">
+                <div class="text-lg font-semibold text-gray-800">
+                  Beef Sharwama x 2<br /><span
+                    class="text-sm font-normal text-gray-600"
+                    >Hotdogs (x)</span
+                  >
+                </div>
+                <div class="mt-3 font-bold text-green-600">#2,200.00</div>
+              </div>
+            </div>
+
+            <div class="flex gap-6 items-start">
+              <div class="w-20 h-20 bg-pink-200 rounded-lg flex-shrink-0"></div>
+              <div class="flex-1">
+                <div class="text-lg font-semibold text-gray-800">
+                  Mix (Chicken&Camp Beef) x 1<br /><span
+                    class="text-sm font-normal text-gray-600"
+                    >Hotdog</span
+                  >
+                </div>
+                <div class="mt-3 font-bold text-green-600">#8,200.00</div>
+              </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-dashed border-gray-200 mt-4 pt-4"></div>
+
+            <!-- Totals -->
+            <div>
+              <div class="space-y-2 ml-auto">
+                <div class="flex justify-between text-sm">
+                  <span class="text-gray-700">Subtotal:</span>
+                  <span class="text-gray-800">#7,000.00</span>
+                </div>
+                <div class="flex justify-between text-sm">
+                  <span class="text-gray-700">Delivery Fee:</span>
+                  <span class="text-gray-800">#500.00</span>
+                </div>
+                <div class="border-t border-dashed border-gray-300 pt-2 mt-2">
+                  <div class="flex justify-between font-bold">
+                    <span>Total:</span>
+                    <span>#8,025.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact area -->
+          <div>
+            <div class="mt-12">
+              <h3 class="text-center text-2xl font-bold mb-6">
+                Any problems with your order?
+              </h3>
+              <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                <a
+                  href="mailto:farodash.sgg@gmail.com"
+                  class="flex items-center gap-4 bg-red-600 hover:bg-red-500 text-white px-6 py-5 rounded-xl w-full sm:w-80 transition"
+                >
+                  <span
+                    class="flex items-center justify-center w-12 h-12 bg-white/10 rounded-md"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M4 6h16v12H4z" />
+                      <path d="m4 6 8 7 8-7" />
+                    </svg>
+                  </span>
+                  <span class="text-left leading-tight">
+                    <span class="block text-sm font-semibold">Email Us</span>
+                    <span class="block text-xs">farodash.sgg@gmail.com</span>
+                  </span>
+                </a>
+                <a
+                  href="tel:+2348517742768"
+                  class="flex items-center gap-4 bg-red-600 hover:bg-red-500 text-white px-6 py-5 rounded-xl w-full sm:w-80 transition"
+                >
+                  <span
+                    class="flex items-center justify-center w-12 h-12 bg-white/10 rounded-md"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.81.37 1.6.72 2.34a2 2 0 0 1-.45 2.18L8.1 9.9a16 16 0 0 0 6 6l1.66-1.23a2 2 0 0 1 2.18-.45c.74.35 1.53.6 2.34.72A2 2 0 0 1 22 16.92z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-left leading-tight">
+                    <span class="block text-sm font-semibold">Call Us</span>
+                    <span class="block text-xs">+234 851 774 2768</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="bg-red-200 pt-20">
+          <div
+            class="zigzag px-16 mt-6 text-center py-4 text-white rounded-b-xl flex justify-center"
+          >
+            <div class="my-16">
+              <img width="350px" src="/public/images/logo.png" alt="" />
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
