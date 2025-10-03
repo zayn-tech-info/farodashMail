@@ -1,4 +1,4 @@
-body{
+body {
   margin: 15px 0px;
 }
 
@@ -43,4 +43,92 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20px;
+}
+
+/* Swiper Styles */
+.swiper {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.restaurantSwiper .swiper-slide {
+  width: auto;
+}
+
+.topPicksSwiper {
+  padding-bottom: 20px;
+}
+
+.topPicksSwiper .swiper-slide {
+  width: auto;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ef4444 !important;
+  background-color: rgba(239, 68, 68, 0.1) !important;
+  border-radius: 50% !important;
+  width: 35px;
+  height: 35px;
+  margin-top: -17.5px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #dc2626 !important;
+  background-color: rgba(239, 68, 68, 0.2) !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-pagination-bullet {
+  background: #ff2f18;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ef4444;
+}
+
+.swiper-slide .bg-white {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swiper-slide .bg-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+ion-icon[name="star"] {
+  color: #fbbf24;
+}
+
+@media (max-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .restaurantSwiper,
+  .topPicksSwiper {
+    padding-bottom: 30px;
+  }
 }

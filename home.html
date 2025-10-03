@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Farodash</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 max-w-4xl mx-auto">
+    <div class="w-full">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="flex items-center justify-center py-6">
+          <ion-icon class="md:hidden mr-4" name="menu-outline"></ion-icon>
+          <div class="flex items-center gap-3">
+            <ion-icon
+              class="text-xl text-red-500"
+              name="location-outline"
+            ></ion-icon>
+            <select
+              class="py-2 px-4 border border-red-500/30 rounded-lg bg-white text-base font-medium focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500"
+              name=""
+              id=""
+            >
+              <option value="">Select your school</option>
+              <option value="">Alayande school of science</option>
+              <option value="">Alayande school of science</option>
+              <option value="">Alayande school of science</option>
+              <option value="">Alayande school of science</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="w-full mb-8">
+          <label class="sr-only" for="search">Search</label>
+          <div class="relative">
+            <ion-icon
+              name="search-outline"
+              class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-xl"
+            ></ion-icon>
+            <input
+              id="search"
+              type="text"
+              placeholder="Search for a dish or restaurant..."
+              class="w-full rounded-xl border border-gray-200 bg-white pl-12 pr-4 py-3.5 text-base shadow-sm outline-none transition focus:border-red-500/60 focus:ring-2 focus:ring-red-500/10 placeholder:text-gray-400"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto px-4">
+      <section class="overflow-hidden rounded-2xl bg-white shadow-sm">
+        <div class="flex items-center justify-between px-6 py-8">
+          <div class="flex-1 max-w-xs">
+            <h2 class="text-4xl font-bold tracking-tight text-black mb-2">
+              30% OFF
+            </h2>
+            <p
+              class="text-gray-700 text-sm md:text-lg leading-snug font-medium mb-6"
+            >
+              Discover food discounts in your favourite local restaurant.
+            </p>
+            <div>
+              <a
+                href="#"
+                class="inline-block bg-red-500 text-white text-sm font-semibold px-6 py-2.5 rounded-lg hover:bg-red-600 transition-colors"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+
+          <div class="flex-shrink-0 ml-6">
+            <img
+              src="/public/images/discount.png"
+              alt="Groceries in a reusable bag"
+              class="w-50 h-auto select-none -mb-10"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="flex justify-center">
+      <div
+        class="grid md:grid-cols-4 mx-auto md:gap-20 my-10 gap-16 grid-cols-2"
+      >
+        <div
+          class="h-25 w-25 bg-red-500/20 rounded-lg flex justify-center items-center shadow-xl"
+        >
+          <img
+            src="/public/images/fast-food-1.png"
+            alt="fast-food-1"
+            width="70px"
+          />
+        </div>
+        <div
+          class="h-25 w-25 bg-red-500/20 rounded-lg flex justify-center items-center shadow-xl"
+        >
+          <img
+            src="/public/images/fast-food-2.png"
+            alt="fast-food-2"
+            width="70px"
+          />
+        </div>
+        <div
+          class="h-25 w-25 bg-red-500/20 rounded-lg flex justify-center items-center shadow-xl"
+        >
+          <img
+            src="/public/images/fast-food-3.png"
+            alt="fast-food-3"
+            width="70px"
+          />
+        </div>
+        <div
+          class="h-25 w-25 bg-red-500/20 rounded-lg flex justify-center items-center shadow-xl"
+        >
+          <img
+            src="/public/images/fast-food-1.png"
+            alt="fast-food-1"
+            width="70px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto px-4 py-8">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold text-gray-900">Popular near you</h2>
+        <a
+          href="#"
+          class="text-red-500 font-medium text-sm hover:text-red-600 transition-colors"
+          >View all</a
+        >
+      </div>
+
+      <div class="swiper restaurantSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="/public/images/restaurant-1.png"
+                  alt="Dailai Lama"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-black/70 text-white px-2 py-1 rounded-lg text-xs font-medium flex items-center gap-1"
+                >
+                  <ion-icon
+                    name="star"
+                    class="text-yellow-400 text-sm"
+                  ></ion-icon>
+                  <span>4.8</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-900 mb-1">Dailai Lama</h3>
+                <p class="text-sm text-gray-600 mb-2">4.5 (250+ reviews)</p>
+                <p class="text-sm text-red-500 font-medium">20-25 min</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="/public/images/restaurant-2.png"
+                  alt="Soho Lagos"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-black/70 text-white px-2 py-1 rounded-lg text-xs font-medium flex items-center gap-1"
+                >
+                  <ion-icon
+                    name="star"
+                    class="text-yellow-400 text-sm"
+                  ></ion-icon>
+                  <span>4.5</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-900 mb-1">Soho Lagos</h3>
+                <p class="text-sm text-gray-600 mb-2">4.5 (250+ reviews)</p>
+                <p class="text-sm text-red-500 font-medium">₦10,000-₦15,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="/public/images/restaurant-1.png"
+                  alt="Fresh Groceries"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-black/70 text-white px-2 py-1 rounded-lg text-xs font-medium flex items-center gap-1"
+                >
+                  <ion-icon
+                    name="star"
+                    class="text-yellow-400 text-sm"
+                  ></ion-icon>
+                  <span>4.7</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-900 mb-1">Fresh Mart</h3>
+                <p class="text-sm text-gray-600 mb-2">4.7 (180+ reviews)</p>
+                <p class="text-sm text-red-500 font-medium">15-20 min</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="/public/images/restaurant-1.png"
+                  alt="Quick Bites"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-black/70 text-white px-2 py-1 rounded-lg text-xs font-medium flex items-center gap-1"
+                >
+                  <ion-icon
+                    name="star"
+                    class="text-yellow-400 text-sm"
+                  ></ion-icon>
+                  <span>4.6</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-900 mb-1">Quick Bites</h3>
+                <p class="text-sm text-gray-600 mb-2">4.6 (320+ reviews)</p>
+                <p class="text-sm text-red-500 font-medium">10-15 min</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="/public/images/restaurant-2.png"
+                  alt="Organic Store"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-black/70 text-white px-2 py-1 rounded-lg text-xs font-medium flex items-center gap-1"
+                >
+                  <ion-icon
+                    name="star"
+                    class="text-yellow-400 text-sm"
+                  ></ion-icon>
+                  <span>4.9</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-900 mb-1">Organic Store</h3>
+                <p class="text-sm text-gray-600 mb-2">4.9 (150+ reviews)</p>
+                <p class="text-sm text-red-500 font-medium">25-30 min</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next text-red-500"></div>
+        <div class="swiper-button-prev text-red-500"></div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="mx-auto px-4 py-8">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold text-gray-900">Top picks for you</h2>
+        <a
+          href="#"
+          class="text-red-500 font-medium text-sm hover:text-red-600 transition-colors"
+          >View all</a
+        >
+      </div>
+
+      <div class="swiper restaurantSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="/public/images/top-picks.png"
+                  alt="Dailai Lama"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-black/70 text-white px-2 py-1 rounded-lg text-xs font-medium flex items-center gap-1"
+                >
+                  <ion-icon
+                    name="star"
+                    class="text-yellow-400 text-sm"
+                  ></ion-icon>
+                  <span>4.8</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-900 mb-1">Dailai Lama</h3>
+                <p class="text-sm text-gray-600 mb-2">4.5 (250+ reviews)</p>
+                <p class="text-sm text-red-500 font-medium">20-25 min</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="/public/images/top-picks.png"
+                  alt="Soho Lagos"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-black/70 text-white px-2 py-1 rounded-lg text-xs font-medium flex items-center gap-1"
+                >
+                  <ion-icon
+                    name="star"
+                    class="text-yellow-400 text-sm"
+                  ></ion-icon>
+                  <span>4.5</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-900 mb-1">Soho Lagos</h3>
+                <p class="text-sm text-gray-600 mb-2">4.5 (250+ reviews)</p>
+                <p class="text-sm text-red-500 font-medium">₦10,000-₦15,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="/public/images/top-picks.png"
+                  alt="Fresh Groceries"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-black/70 text-white px-2 py-1 rounded-lg text-xs font-medium flex items-center gap-1"
+                >
+                  <ion-icon
+                    name="star"
+                    class="text-yellow-400 text-sm"
+                  ></ion-icon>
+                  <span>4.7</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-900 mb-1">Fresh Mart</h3>
+                <p class="text-sm text-gray-600 mb-2">4.7 (180+ reviews)</p>
+                <p class="text-sm text-red-500 font-medium">15-20 min</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="/public/images/top-picks.png"
+                  alt="Quick Bites"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-black/70 text-white px-2 py-1 rounded-lg text-xs font-medium flex items-center gap-1"
+                >
+                  <ion-icon
+                    name="star"
+                    class="text-yellow-400 text-sm"
+                  ></ion-icon>
+                  <span>4.6</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-900 mb-1">Quick Bites</h3>
+                <p class="text-sm text-gray-600 mb-2">4.6 (320+ reviews)</p>
+                <p class="text-sm text-red-500 font-medium">10-15 min</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300"
+            >
+              <div class="relative">
+                <img
+                  src="/public/images/top-picks.png"
+                  alt="Organic Store"
+                  class="w-full h-48 object-cover"
+                />
+                <div
+                  class="absolute top-3 right-3 bg-black/70 text-white px-2 py-1 rounded-lg text-xs font-medium flex items-center gap-1"
+                >
+                  <ion-icon
+                    name="star"
+                    class="text-yellow-400 text-sm"
+                  ></ion-icon>
+                  <span>4.9</span>
+                </div>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-gray-900 mb-1">Organic Store</h3>
+                <p class="text-sm text-gray-600 mb-2">4.9 (150+ reviews)</p>
+                <p class="text-sm text-red-500 font-medium">25-30 min</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next text-red-500"></div>
+        <div class="swiper-button-prev text-red-500"></div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Deals on grocery</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="text-center">
+            <div class="relative bg-gray-50 rounded-xl p-4 mb-3">
+              <img
+                src="/public/images/grocery.png"
+                alt="Kellogg's crunchy fruits and nutshell"
+                class="w-full h-24 object-contain mx-auto"
+              />
+              <button
+                aria-label="Add to cart"
+                class="absolute top-2 right-2 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors"
+              >
+                <ion-icon name="add" class="text-gray-600 text-sm"></ion-icon>
+              </button>
+            </div>
+            <h3 class="font-medium text-gray-900 text-sm mb-1 leading-tight">
+              Kellogg's crunchy fruits and nutshell
+            </h3>
+            <p class="text-lg font-bold text-gray-900">₦3000.00</p>
+          </div>
+
+          <div class="text-center">
+            <div class="relative bg-gray-50 rounded-xl p-4 mb-3">
+              <img
+                src="/public/images/grocery-2.png"
+                alt="Kellogg's crunchy fruits and nutshell"
+                class="w-full h-24 object-contain mx-auto"
+              />
+              <button
+                aria-label="Add to cart"
+                class="absolute top-2 right-2 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors"
+              >
+                <ion-icon name="add" class="text-gray-600 text-sm"></ion-icon>
+              </button>
+            </div>
+            <h3 class="font-medium text-gray-900 text-sm mb-1 leading-tight">
+              Kellogg's crunchy fruits and nutshell
+            </h3>
+            <p class="text-lg font-bold text-gray-900">₦3000.00</p>
+          </div>
+
+          <div class="text-center">
+            <div class="relative bg-gray-50 rounded-xl p-4 mb-3">
+              <img
+                src="/public/images/grocery-3.png"
+                alt="Kellogg's crunchy fruits and nutshell"
+                class="w-full h-24 object-contain mx-auto"
+              />
+              <button
+                aria-label="Add to cart"
+                class="absolute top-2 right-2 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors"
+              >
+                <ion-icon name="add" class="text-gray-600 text-sm"></ion-icon>
+              </button>
+            </div>
+            <h3 class="font-medium text-gray-900 text-sm mb-1 leading-tight">
+              Kellogg's crunchy fruits and nutshell
+            </h3>
+            <p class="text-lg font-bold text-gray-900">₦3000.00</p>
+          </div>
+
+          <div class="text-center">
+            <div class="relative bg-gray-50 rounded-xl p-4 mb-3">
+              <img
+                src="/public/images/grocery-4.png"
+                alt="Kellogg's crunchy fruits and nutshell"
+                class="w-full h-24 object-contain mx-auto"
+              />
+              <button
+                aria-label="Add to cart"
+                class="absolute top-2 right-2 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors"
+              >
+                <ion-icon name="add" class="text-gray-600 text-sm"></ion-icon>
+              </button>
+            </div>
+            <h3 class="font-medium text-gray-900 text-sm mb-1 leading-tight">
+              Kellogg's crunchy fruits and nutshell
+            </h3>
+            <p class="text-lg font-bold text-gray-900">₦3000.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var restaurantSwiper = new Swiper(".restaurantSwiper", {
+        slidesPerView: 1.2,
+        spaceBetween: 16,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 24,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+
+      // Top Picks Swiper Configuration
+      var topPicksSwiper = new Swiper(".topPicksSwiper", {
+        slidesPerView: 2.2,
+        spaceBetween: 12,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 16,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 24,
+          },
+        },
+        loop: true,
+        freeMode: true,
+      });
+    </script>
+  </body>
+</html>
