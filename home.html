@@ -10,134 +10,145 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-  <body class="bg-gray-100 max-w-4xl mx-auto">
-    <div class="w-full">
-      <div class="max-w-4xl mx-auto px-4">
-        <div class="flex items-center justify-center py-6">
-          <ion-icon class="md:hidden mr-4" name="menu-outline"></ion-icon>
-          <div class="flex items-center gap-3">
+  <body class="bg-gray-50 min-h-screen">
+ 
+    <div class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-md mx-auto px-4 sm:max-w-4xl sm:px-6">
+        <div class="flex items-center justify-between py-4">
+          <ion-icon class="text-2xl text-gray-700 sm:hidden" name="menu-outline"></ion-icon>
+          
+          <div class="flex items-center gap-2 flex-1 sm:justify-center">
             <ion-icon
-              class="text-xl text-red-500"
+              class="text-lg text-red-500 flex-shrink-0"
               name="location-outline"
             ></ion-icon>
             <select
-              class="py-2 px-4 border border-red-500/30 rounded-lg bg-white text-base font-medium focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500"
+              class="py-2 px-3 border border-red-500/30 rounded-lg bg-white text-sm font-medium focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 flex-1 sm:flex-initial sm:text-base"
               name=""
               id=""
             >
-              <option value="">Select your school</option>
+  
               <option value="">Alayande school of science</option>
               <option value="">Alayande school of science</option>
               <option value="">Alayande school of science</option>
               <option value="">Alayande school of science</option>
             </select>
           </div>
+          
+          <div class="w-8 sm:hidden"></div>  
         </div>
 
-        <div class="w-full mb-8">
+     
+        <div class="px-4 pb-4">
           <label class="sr-only" for="search">Search</label>
           <div class="relative">
             <ion-icon
               name="search-outline"
-              class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-xl"
+              class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-lg"
             ></ion-icon>
             <input
               id="search"
               type="text"
               placeholder="Search for a dish or restaurant..."
-              class="w-full rounded-xl border border-gray-200 bg-white pl-12 pr-4 py-3.5 text-base shadow-sm outline-none transition focus:border-red-500/60 focus:ring-2 focus:ring-red-500/10 placeholder:text-gray-400"
+              class="w-full rounded-xl border border-gray-200 bg-gray-50 pl-10 pr-4 py-3 text-sm shadow-sm outline-none transition focus:border-red-500/60 focus:ring-2 focus:ring-red-500/10 placeholder:text-gray-400 sm:text-base sm:py-3.5"
             />
           </div>
         </div>
       </div>
     </div>
+    
+ 
+    <div class="max-w-md mx-auto sm:max-w-4xl">
 
-    <div class="mx-auto px-4">
-      <section class="overflow-hidden rounded-2xl bg-white shadow-sm">
-        <div class="flex items-center justify-between px-6 py-8">
-          <div class="flex-1 max-w-xs">
-            <h2 class="text-4xl font-bold tracking-tight text-black mb-2">
-              30% OFF
-            </h2>
-            <p
-              class="text-gray-700 text-sm md:text-lg leading-snug font-medium mb-6"
-            >
-              Discover food discounts in your favourite local restaurant.
-            </p>
-            <div>
-              <a
-                href="#"
-                class="inline-block bg-red-500 text-white text-sm font-semibold px-6 py-2.5 rounded-lg hover:bg-red-600 transition-colors"
-              >
-                Order Now
-              </a>
+ 
+      <div class="px-4 py-4">
+        <section class="overflow-hidden rounded-2xl bg-white shadow-sm">
+          <div class="flex items-end px-4 py-6 sm:px-6 sm:py-8 min-h-[120px] sm:min-h-[140px]">
+            <div class="flex-1 pr-4 pb-2">
+              <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-black mb-2">
+                30% OFF
+              </h2>
+              <p class="text-gray-700 text-xs sm:text-sm md:text-lg leading-relaxed font-medium mb-4 sm:mb-6">
+                Discover food discounts in your favourite local restaurant.
+              </p>
+              <div>
+                <a
+                  href="#"
+                  class="inline-block bg-red-500 text-white text-xs sm:text-sm font-semibold px-4 py-2 sm:px-6 sm:py-2.5 rounded-lg hover:bg-red-600 transition-colors"
+                >
+                  Order Now
+                </a>
+              </div>
+            </div>
+
+            <div class="flex-shrink-0 self-stretch flex items-end">
+              <img
+                src="/public/images/discount.png"
+                alt="Groceries in a reusable bag"
+                class="w-24 h-auto select-none sm:w-32 md:w-50 object-bottom"
+                loading="lazy"
+              />
             </div>
           </div>
+        </section>
+      </div>
 
-          <div class="flex-shrink-0 ml-6">
-            <img
-              src="/public/images/discount.png"
-              alt="Groceries in a reusable bag"
-              class="w-50 h-auto select-none -mb-10"
-              loading="lazy"
-            />
+ 
+      <div class="px-4 py-6">
+        <div class="grid grid-cols-4 gap-4 sm:gap-8 md:gap-16">
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-red-100/20 rounded-xl flex justify-center items-center shadow-lg mb-2">
+              <img
+                src="/public/images/fast-food-1.png"
+                alt="Fast Food"
+                class="w-13 h-13 sm:w-10 sm:h-10 md:w-12 md:h-12"
+              />
+            </div>
+            <span class="text-xs text-gray-600 text-center font-medium">Fast Food</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-red-100/20 rounded-xl flex justify-center items-center shadow-lg mb-2">
+              <img
+                src="/public/images/fast-food-2.png"
+                alt="Beverages"
+                class="w-13 h-13 sm:w-10 sm:h-10 md:w-12 md:h-12"
+              />
+            </div>
+            <span class="text-xs text-gray-600 text-center font-medium">Snacks</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-red-100/20 rounded-xl flex justify-center items-center shadow-lg mb-2">
+              <img
+                src="/public/images/fast-food-3.png"
+                alt="Desserts"
+                class="w-13 h-13 sm:w-10 sm:h-10 md:w-12 md:h-12"
+              />
+            </div>
+            <span class="text-xs text-gray-600 text-center font-medium">Swallow</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-red-100/20 rounded-xl flex justify-center items-center shadow-lg mb-2">
+              <img
+                src="/public/images/fast-food-1.png"
+                alt="Snacks"
+                class="w-13 h-13 sm:w-10 sm:h-10 md:w-12 md:h-12"
+              />
+            </div>
+            <span class="text-xs text-gray-600 text-center font-medium">Smoothie</span>
           </div>
         </div>
-      </section>
-    </div>
-
-    <div class="flex justify-center">
-      <div
-        class="grid md:grid-cols-4 mx-auto md:gap-20 my-10 gap-16 grid-cols-2"
-      >
-        <div
-          class="h-25 w-25 bg-red-500/20 rounded-lg flex justify-center items-center shadow-xl"
-        >
-          <img
-            src="/public/images/fast-food-1.png"
-            alt="fast-food-1"
-            width="70px"
-          />
-        </div>
-        <div
-          class="h-25 w-25 bg-red-500/20 rounded-lg flex justify-center items-center shadow-xl"
-        >
-          <img
-            src="/public/images/fast-food-2.png"
-            alt="fast-food-2"
-            width="70px"
-          />
-        </div>
-        <div
-          class="h-25 w-25 bg-red-500/20 rounded-lg flex justify-center items-center shadow-xl"
-        >
-          <img
-            src="/public/images/fast-food-3.png"
-            alt="fast-food-3"
-            width="70px"
-          />
-        </div>
-        <div
-          class="h-25 w-25 bg-red-500/20 rounded-lg flex justify-center items-center shadow-xl"
-        >
-          <img
-            src="/public/images/fast-food-1.png"
-            alt="fast-food-1"
-            width="70px"
-          />
-        </div>
       </div>
-    </div>
 
-    <div class="mx-auto px-4 py-8">
-      <div class="flex items-center justify-between mb-6">
-        <h2 class="text-2xl font-bold text-gray-900">Popular near you</h2>
-        <a
-          href="#"
-          class="text-red-500 font-medium text-sm hover:text-red-600 transition-colors"
-          >View all</a
-        >
-      </div>
+ 
+      <div class="px-4 py-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl sm:text-2xl font-bold text-gray-900">Popular near you</h2>
+          <a
+            href="#"
+            class="text-red-500 font-medium text-xs sm:text-sm hover:text-red-600 transition-colors"
+            >View all</a
+          >
+        </div>
 
       <div class="swiper restaurantSwiper">
         <div class="swiper-wrapper">
@@ -288,16 +299,16 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
-
-    <div class="mx-auto px-4 py-8">
-      <div class="flex items-center justify-between mb-6">
-        <h2 class="text-2xl font-bold text-gray-900">Top picks for you</h2>
-        <a
-          href="#"
-          class="text-red-500 font-medium text-sm hover:text-red-600 transition-colors"
-          >View all</a
-        >
-      </div>
+ 
+      <div class="px-4 py-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl sm:text-2xl font-bold text-gray-900">Top picks for you</h2>
+          <a
+            href="#"
+            class="text-red-500 font-medium text-xs sm:text-sm hover:text-red-600 transition-colors"
+            >View all</a
+          >
+        </div>
 
       <div class="swiper restaurantSwiper">
         <div class="swiper-wrapper">
@@ -449,12 +460,34 @@
       </div>
     </div>
 
+ 
     <div class="mx-auto px-4 py-8">
       <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
         <h2 class="text-2xl font-bold text-gray-900 mb-6">Deals on grocery</h2>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="text-center">
+      
+        <div class="relative">
+       
+          <button 
+            id="groceryPrevBtn"
+            class="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors md:hidden"
+            aria-label="Previous items"
+          >
+            <ion-icon name="chevron-back" class="text-gray-600 text-sm"></ion-icon>
+          </button>
+          
+          <button 
+            id="groceryNextBtn"
+            class="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors md:hidden"
+            aria-label="Next items"
+          >
+            <ion-icon name="chevron-forward" class="text-gray-600 text-sm"></ion-icon>
+          </button>
+
+         
+          <div id="groceryScrollContainer" class="flex overflow-x-auto gap-4 pb-2 md:grid md:grid-cols-4 md:gap-4 md:overflow-visible md:pb-0 grocery-scroll">
+       
+          <div class="flex-shrink-0 w-40 md:w-auto md:flex-shrink text-center grocery-item">
             <div class="relative bg-gray-50 rounded-xl p-4 mb-3">
               <img
                 src="/public/images/grocery.png"
@@ -471,10 +504,11 @@
             <h3 class="font-medium text-gray-900 text-sm mb-1 leading-tight">
               Kellogg's crunchy fruits and nutshell
             </h3>
-            <p class="text-lg font-bold text-gray-900">₦3000.00</p>
+            <p class="text-lg font-bold text-red-500">₦3000.00</p>
           </div>
 
-          <div class="text-center">
+      
+          <div class="flex-shrink-0 w-40 md:w-auto md:flex-shrink text-center grocery-item">
             <div class="relative bg-gray-50 rounded-xl p-4 mb-3">
               <img
                 src="/public/images/grocery-2.png"
@@ -491,10 +525,11 @@
             <h3 class="font-medium text-gray-900 text-sm mb-1 leading-tight">
               Kellogg's crunchy fruits and nutshell
             </h3>
-            <p class="text-lg font-bold text-gray-900">₦3000.00</p>
+            <p class="text-lg font-bold text-red-500">₦3000.00</p>
           </div>
 
-          <div class="text-center">
+    
+          <div class="flex-shrink-0 w-40 md:w-auto md:flex-shrink text-center grocery-item">
             <div class="relative bg-gray-50 rounded-xl p-4 mb-3">
               <img
                 src="/public/images/grocery-3.png"
@@ -511,10 +546,11 @@
             <h3 class="font-medium text-gray-900 text-sm mb-1 leading-tight">
               Kellogg's crunchy fruits and nutshell
             </h3>
-            <p class="text-lg font-bold text-gray-900">₦3000.00</p>
+            <p class="text-lg font-bold text-red-500">₦3000.00</p>
           </div>
 
-          <div class="text-center">
+      
+          <div class="flex-shrink-0 w-40 md:w-auto md:flex-shrink text-center grocery-item">
             <div class="relative bg-gray-50 rounded-xl p-4 mb-3">
               <img
                 src="/public/images/grocery-4.png"
@@ -531,10 +567,14 @@
             <h3 class="font-medium text-gray-900 text-sm mb-1 leading-tight">
               Kellogg's crunchy fruits and nutshell
             </h3>
-            <p class="text-lg font-bold text-gray-900">₦3000.00</p>
+            <p class="text-lg font-bold text-red-500">₦3000.00</p>
+          </div>
           </div>
         </div>
       </div>
+      
+ 
+      <div class="h-8"></div>
     </div>
 
     <script
@@ -549,8 +589,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var restaurantSwiper = new Swiper(".restaurantSwiper", {
-        slidesPerView: 1.2,
-        spaceBetween: 16,
+        slidesPerView: 1.1,
+        spaceBetween: 12,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -580,10 +620,10 @@
         },
       });
 
-      // Top Picks Swiper Configuration
+ 
       var topPicksSwiper = new Swiper(".topPicksSwiper", {
-        slidesPerView: 2.2,
-        spaceBetween: 12,
+        slidesPerView: 2.5,
+        spaceBetween: 8,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -605,6 +645,46 @@
         loop: true,
         freeMode: true,
       });
+
+      
+      document.addEventListener('DOMContentLoaded', function() {
+        const scrollContainer = document.getElementById('groceryScrollContainer');
+        const prevBtn = document.getElementById('groceryPrevBtn');
+        const nextBtn = document.getElementById('groceryNextBtn');
+        
+        if (scrollContainer && prevBtn && nextBtn) {
+          const scrollAmount = 168;  
+          
+          nextBtn.addEventListener('click', function() {
+            scrollContainer.scrollBy({
+              left: scrollAmount,
+              behavior: 'smooth'
+            });
+          });
+          
+          prevBtn.addEventListener('click', function() {
+            scrollContainer.scrollBy({
+              left: -scrollAmount,
+              behavior: 'smooth'
+            });
+          });
+          
+  
+          function updateButtonVisibility() {
+            const scrollLeft = scrollContainer.scrollLeft;
+            const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+            
+            prevBtn.style.opacity = scrollLeft <= 0 ? '0.5' : '1';
+            nextBtn.style.opacity = scrollLeft >= maxScrollLeft ? '0.5' : '1';
+          }
+          
+          scrollContainer.addEventListener('scroll', updateButtonVisibility);
+          updateButtonVisibility(); 
+        }
+      });
     </script>
+    
+ 
+    <div class="h-8 sm:h-0"></div>
   </body>
 </html>

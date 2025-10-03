@@ -13,7 +13,6 @@ header {
   justify-content: center;
   align-items: center;
   margin: 10px 0px;
-  /* padding-bottom: 50px; */
 }
 
 .page-frame {
@@ -45,7 +44,6 @@ footer {
   padding: 20px;
 }
 
-/* Swiper Styles */
 .swiper {
   width: 100%;
   padding-bottom: 50px;
@@ -66,7 +64,6 @@ footer {
 .topPicksSwiper .swiper-slide {
   width: auto;
 }
-
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -122,6 +119,11 @@ ion-icon[name="star"] {
 }
 
 @media (max-width: 640px) {
+  body {
+    margin: 0;
+    background-color: #f9fafb;
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
@@ -129,6 +131,71 @@ ion-icon[name="star"] {
 
   .restaurantSwiper,
   .topPicksSwiper {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
+
+  .swiper-pagination {
+    bottom: 0;
+  }
+
+  .restaurantSwiper .swiper-slide .bg-white {
+    margin-right: 0.5rem;
+  }
+
+  .topPicksSwiper .swiper-slide .bg-white {
+    width: 140px;
+    margin-right: 0.25rem;
+  }
+
+  .category-grid {
+    gap: 0.75rem;
+  }
+
+  .grocery-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .grocery-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+  }
+
+  .grocery-item {
+    scroll-snap-align: start;
+  }
+
+  #groceryPrevBtn,
+  #groceryNextBtn {
+    transition: opacity 0.3s ease, transform 0.2s ease;
+  }
+
+  #groceryPrevBtn:hover,
+  #groceryNextBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  #groceryPrevBtn:active,
+  #groceryNextBtn:active {
+    transform: scale(0.95);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 14px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
